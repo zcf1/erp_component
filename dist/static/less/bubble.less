@@ -1,0 +1,129 @@
+.@{css-prefix}example-wrap {
+    margin-bottom: 30px;
+}
+.@{css-prefix}example-tooltip {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+.@{css-prefix}example:after, .@{css-prefix}example:before {
+    display: table;
+    content: " ";
+}
+.@{css-prefix}example:after {
+    clear: both;
+}
+
+.@{css-prefix}tooltip {
+    position: absolute;
+    z-index: 1900;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    opacity: 0;
+    line-break: auto;
+}
+.@{css-prefix}tooltip.bottom {
+    padding: 4px 0;
+    margin-top: 3px;
+}
+.@{css-prefix}tooltip.top {
+    padding: 4px 0;
+    margin-top: -3px;
+}
+.@{css-prefix}tooltip.right {
+    padding: 0 4px;
+    margin-left: 3px;
+}
+.@{css-prefix}tooltip.left {
+    padding: 0 4px;
+    margin-left: -3px;
+}
+.@{css-prefix}example-tooltip .@{css-prefix}tooltip {
+    position: relative;
+    margin-right: 25px;
+    opacity: 1;
+}
+.@{css-prefix}tooltip-arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+}
+.@{css-prefix}tooltip.bottom .@{css-prefix}tooltip-arrow {
+    top: 0;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 0 4px 4px;
+    border-bottom-color: rgba(0,0,0,.8);
+}
+.@{css-prefix}tooltip.top .@{css-prefix}tooltip-arrow {
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+    border-width: 4px 4px 0;
+    border-top-color: rgba(0,0,0,.8);
+}
+.@{css-prefix}tooltip.right .@{css-prefix}tooltip-arrow {
+    top: 50%;
+    left: 0;
+    margin-top: -4px;
+    border-width: 4px 4px 4px 0;
+    border-right-color: rgba(0,0,0,.8);
+}
+.@{css-prefix}tooltip.left .@{css-prefix}tooltip-arrow {
+    top: 50%;
+    right: 0;
+    margin-top: -4px;
+    border-width: 4px 0 4px 4px;
+    border-left-color: rgba(0,0,0,.8);
+}
+.@{css-prefix}tooltip-inner {
+    max-width: 200px;
+    padding: 3px 8px;
+    color: #fff;
+    text-align: center;
+    background-color: rgba(0,0,0,.8);
+    border-radius: 2px;
+}
+.@{css-prefix}tooltip-inner {
+    padding: 6px 12px;
+    white-space: nowrap;
+}
+
+.@{css-prefix}arrow-left{
+    left: 15%;
+}
+.@{css-prefix}arrow-right{
+    left: 85%;
+}
+
+.xfd-tooltip.arrow-left .xfd-tooltip-arrow
+{
+    left: 15%;
+}
+.xfd-tooltip.arrow-right .xfd-tooltip-arrow
+{
+    left: 85%;
+}
+.xfd-tooltip.arrow-bottom .xfd-tooltip-arrow
+{
+    top: 70%;
+}
+.xfd-tooltip.arrow-top .xfd-tooltip-arrow{
+    top: 30%
+}

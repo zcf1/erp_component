@@ -1,0 +1,177 @@
+.@{css-prefix}table{
+    width: 100%;
+    max-width: 100%;
+}
+.@{css-prefix}body-content{
+    max-height: 200px;
+    overflow-y: auto;
+}
+.@{css-prefix}table-content{
+    width:200px; 
+    height: 244px; 
+    overflow-y: hidden; 
+    position: absolute; 
+    top:0; left: 0; 
+    overflow-x: hidden; 
+    border-right: 1px solid #E4E9ED;
+    box-shadow: 1px 0 1px 0 #E4E9ED;
+    display: none;
+}
+.@{css-prefix}table-content .@{css-prefix}body-content{
+    max-height: 196px;
+}
+
+.@{css-prefix}table > caption + thead > tr:first-child > th, 
+.@{css-prefix}table > colgroup + thead > tr:first-child > th, 
+.@{css-prefix}table > thead:first-child > tr:first-child > th, 
+.@{css-prefix}table > caption + thead > tr:first-child > td, 
+.@{css-prefix}table > colgroup + thead > tr:first-child > td, 
+.@{css-prefix}table > thead:first-child > tr:first-child > td {
+    border-top: 0;
+}
+
+.@{css-prefix}table > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #E4E9ED;
+    background: #F2F5F8;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.@{css-prefix}table > thead > tr > th, 
+.@{css-prefix}table > tbody > tr > th, 
+.@{css-prefix}table > tfoot > tr > th, 
+.@{css-prefix}table > thead > tr > td, 
+.@{css-prefix}table > tbody > tr > td, 
+.@{css-prefix}table > tfoot > tr > td {
+    padding: 14px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    border-top: 1px solid #E4E9ED;
+    font-size: 12px;
+    text-align: left;
+}
+.@{css-prefix}table > thead > tr > th, 
+.@{css-prefix}table > tbody > tr > th, 
+.@{css-prefix}table > tfoot > tr > th {
+    color: #57636F;
+    font-size: 14px;
+}
+.@{css-prefix}table > thead > tr > td, 
+.@{css-prefix}table > tbody > tr > td, 
+.@{css-prefix}table > tfoot > tr > td {
+    color: #2C393F;
+}
+
+.@{css-prefix}table > thead > tr:first-child > td, 
+.@{css-prefix}table > tbody > tr:first-child > td, 
+.@{css-prefix}table > tfoot > tr:first-child > td{
+    border-top: 0;
+}
+
+.@{css-prefix}table > thead > tr > td > a:not(:last-child), 
+.@{css-prefix}table > tbody > tr > td > a:not(:last-child), 
+.@{css-prefix}table > tfoot > tr > td > a:not(:last-child) {
+    margin-right: 16px;
+}
+
+@media screen and (max-width: 767px){
+    // .@{css-prefix}table-responsive {
+    //     width: 100%;
+    //     // margin-bottom: 15px;
+    //     // overflow-y: hidden;
+    //     -ms-overflow-style: -ms-autohiding-scrollbar;
+    //     // border: 1px solid #ddd;
+    //     overflow-x: auto;
+    // }
+}
+.@{css-prefix}table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
+}
+.@{css-prefix}table-border{
+    position: relative; 
+    border:1px solid #E4E9ED;
+}
+@media screen and (max-width: 767px){
+    .@{css-prefix}table-responsive>.table>tbody>tr>td, 
+    .@{css-prefix}table-responsive>.table>tbody>tr>th, 
+    .@{css-prefix}table-responsive>.table>tfoot>tr>td, 
+    .@{css-prefix}table-responsive>.table>tfoot>tr>th, 
+    .@{css-prefix}table-responsive>.table>thead>tr>td, 
+    .@{css-prefix}table-responsive>.table>thead>tr>th {
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 1110px){
+    .@{css-prefix}table-content{
+        display: block;
+    }
+}
+
+
+
+.@{css-prefix}width-auto{
+    min-width: 1024px;
+}
+.@{css-prefix}width-check{
+    width: 40px;
+}
+
+.@{css-prefix}body-content::-webkit-scrollbar{
+    margin-bottom: 10px;
+    bottom: -10px;
+    width: 4px;
+    height: 4px;
+    background-color: #f5f5f5;
+}
+.@{css-prefix}body-content::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.@{css-prefix}body-content::-webkit-scrollbar-thumb{
+    /*width: 10px;*/
+    height: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #D2D7DD;
+}
+
+
+.@{css-prefix}table-head::-webkit-scrollbar{
+    width: 4px;
+    height: 0px;
+    background-color: #f5f5f5;
+}
+.@{css-prefix}table-head::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.@{css-prefix}table-head::-webkit-scrollbar-thumb{
+    /*width: 10px;*/
+    height: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #E4E9ED;
+}
+
+.@{css-prefix}table-base::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    background-color: #f5f5f5;
+}
+.@{css-prefix}table-base::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.@{css-prefix}table-base::-webkit-scrollbar-thumb{
+    /*width: 10px;*/
+    height: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #E4E9ED;
+}

@@ -1,0 +1,232 @@
+body{
+    background: #f2f5f8;
+    font-family: PingFangSC-Regular,MicrosoftYaHei,HiraginoSansGB-W3;
+}
+.xfd-tabs{
+    padding: 32px 16px 0;
+    position: relative;
+}
+
+.xfd-subsidy-form{
+    margin: 16px 16px 32px;
+}
+.xfd-subsidy-form .form-group{
+    margin-right: 16px;
+    margin-top: 16px;
+}
+.xfd-subsidy-form button{
+    margin-top: 16px;
+}
+.xfd-subsidy-form .form-inline{
+    padding-bottom: 32px;
+    overflow: hidden;
+}
+.xfd-checkbox-form{
+    overflow: hidden;
+    padding: 16px;
+}
+.xfd-checkbox-custom{
+    margin-right: 32px;
+}
+.xfd-box-padding{
+    padding: 64px 16px 0;
+}
+.xfd-park-mess{
+    overflow: hidden;
+    padding: 24px 24px 0;
+}
+.xfd-park-mess img{
+    width: 200px;
+    height: 100px;
+}
+.xfd-park-mess > div:last-child{
+    margin-top: 80px;
+}
+.xfd-shadow-content{
+    padding-top: 64px;
+    margin: 0 32px;
+}
+.xfd-shadow-block{
+    padding: 32px 32px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+.xfd-pd-rt{
+    padding-right: 0;
+    padding-left: 0;
+}
+.xfd-control-lbl > .xfd-control-label{
+    width: 5.34%;
+}
+.xfd-control-lbl textarea{
+    height: 90px;
+}
+.xfd-bg-fixing{
+    background: #FAFBFC;
+    padding: 16px 16px 0;
+    margin-bottom: 32px;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.xfd-seller-box{
+    box-shadow: 0 0 5px rgba(0,0,0,0.4);
+    margin-bottom: 16px;
+}
+.xfd-seller-title{
+    padding: 32px 32px 32px 16px;
+}
+.xfd-seller{
+    height: 532px;
+    overflow-y: auto;
+    /*background: #F2F5F8;*/
+}
+.xfd-seller li{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 16px;
+}
+.xfd-seller-left li:nth-child(odd){
+    background: #F2F5F8;
+}
+.xfd-seller-right li:nth-child(odd){
+    background: #FAFBFC;
+}
+.xfd-seller-right li{
+    height: 76px;
+}
+.xfd-seller img{
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+}
+.xfd-seller-name{
+    -webkit-box-flex: 1;
+    flex: 1;
+    padding-left: 16px;
+    -webkit-box-align: center;
+    display: -webkit-box;
+}
+.xfd-seller-right-name{
+    margin-right: 64px;
+    background: #f2f5f8;
+}
+.xfd-selle-price{
+    -webkit-box-flex: 1;
+    flex: 1;
+    margin-top: 7px;
+}
+.xfd-selle-price input{
+    width: 160px;
+    display: inline-block;
+    margin-left: 16px;
+}
+.xfd-seller .icon-guanbi2:before{
+    color: #D2D7DD;
+    vertical-align: -10px;
+}
+.iconfont:hover.icon-guanbi2:before{
+    color: #FF7570;
+}
+.xfd-seller li:hover{
+    color: #0091DB;
+}
+.xfd-seller input::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    background-color: #f5f5f5;
+}
+.xfd-seller input::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.xfd-seller input::-webkit-scrollbar-thumb{
+    /*width: 10px;*/
+    height: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #D2D7DD;
+}
+.xfd-apply-main{
+    margin: 32px 16px;
+    padding-bottom: 32px;
+}
+.xfd-modal-row{
+    padding: 16px 16px 32px;
+    overflow: hidden;
+}
+.xfd-modal{
+    background: #FFFFFF;
+    box-shadow: 0 2px 4px 0 #D2D7DD;
+    border-radius: 2px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+.xfd-modal img{
+    margin: 170px auto 0;
+}
+.xfd-img-default{
+    display: block;
+}
+.xfd-img-active{
+    display: none;
+}
+.xfd-modal-primary img{
+    margin-top: 112px;
+}
+.xfd-modal-fixing{
+    padding-bottom: 0;
+}
+.xfd-modal-fixing img{
+    margin-top: -5px;
+}
+
+.xfd-modal:hover,.xfd-modal:active,.xfd-modal.active{
+    -webkit-transform:translateY(-20px);
+    -moz-transform:translateY(-20px);
+    -ms-transform:translateY(-20px);
+    -o-transform:translateY(-20px);
+    transform:translateY(-20px);
+}
+
+.xfd-modal:hover .xfd-img-default{
+    display: none;
+}
+.xfd-modal:hover .xfd-img-active{
+    display: block;
+}
+
+.xfd-card{
+    overflow: hidden;
+    padding-top: 32px;
+}
+.xfd-card-list{
+    background: #FAFBFC;
+    border-radius: 2px;
+    overflow: hidden;
+    margin: 16px;
+}
+.xfd-card img{
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    margin: 16px;
+}
+
+.form-group-label label{
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 5px;
+    min-width: 50px;
+    color: #8995A0;
+}
+.form-row{
+    margin: 16px 16px 32px;
+}

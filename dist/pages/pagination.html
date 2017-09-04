@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>按钮</title>
+    
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../static/fonts/font-asesome.css" />
+<link rel="stylesheet" href="../static/fonts/iconfont/iconfont.css" />
+<link rel="stylesheet" href="../static/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+<link rel="stylesheet" href="../static/styles/bootstrap.css" />
+<link rel="stylesheet" href="../static/less/app.css" />
+<script src="../js/lib/js.cookie.js"></script>
+<script src="../js/utils/erp-authority.js"></script>
+<script src="../js/lib/require.js"></script>
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/security.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/lib/transition.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/app.js"></script>
+<title>我是测试标题</title>
+
+    <style>
+        #pagers-box{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading hbuilt">
+                            分页组件
+                        </div>
+                        <div class="panel-body float-e-margins">
+                            <div id="pagers-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div id="pagers-box2"></div>
+                    </div>
+                </div> -->
+            </div>
+    </div>
+    <script type="text/javascript">
+        require(['controller/pagers/Index'], function (index) {
+            function getPage(nowPageNo){
+                $.get('http://localhost:8000/v2/pages/',{defaultCurrent:nowPageNo},function(data){
+                    var nowPageNo = data.nowPageNo;
+                    var tem = $.Pagination.init({
+                        dom_box: '#pagers-box',
+                        defaultCurrent: nowPageNo,
+                        total: data.total,
+                        defaultPageSize: 10
+                    });
+                    tem.defaultProps.changeCallback = function($this, call_data){
+                        getPage(call_data)
+                    }
+                })
+            }
+
+            getPage(1);
+
+           /* var temp = $.Pagination.init({
+                dom_box: '#pagers-box',
+                defaultCurrent: 1,
+                total: 100,
+                defaultPageSize: 10,
+                changeCallback: function ($this, call_data) {
+                    console.log(call_data);
+                    //init(call_data)
+                    //temp.resetTotal(500,call_data);
+                }
+            });
+            temp.defaultProps.changeCallback = function($this, call_data){
+                console.log(call_data);
+            }*/
+        });
+    </script>
+</body>
+</html>

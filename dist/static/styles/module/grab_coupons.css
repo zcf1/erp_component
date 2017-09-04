@@ -1,0 +1,1110 @@
+.btn-selected{
+    background-color: #ffffff;
+    border-left-color: #e4e5e7;
+    border-top-color: #e4e5e7;
+    border-right-color: #e4e5e7;
+    color: #2290FE;
+    padding: 15px 25px;
+    font-size: 13px;
+
+}
+.btn-selected:hover,
+.btn-selected:focus,
+.btn-selected:active,
+.btn-selected.active,
+.open .dropdown-toggle.btn-selected {
+    background-color: #ffffff;
+    border-left-color: #e4e5e7;
+    border-top-color: #e4e5e7;
+    border-right-color: #e4e5e7;
+    color: #2290FE;
+    padding: 15px 25px;
+}
+
+.btn-defaults{
+    background-color: #f1f3f6;
+    border-color: #f1f3f6;
+    color: #888888;
+    padding: 15px 25px;
+    font-size: 13px;
+}
+
+.btn-defaults:hover,
+.btn-defaults:focus,
+.btn-defaults:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-defaults {
+    background-color: #f1f3f6;
+    border-color: #f1f3f6;
+    color: #888888;
+    padding: 15px 25px;
+    font-size: 13px;
+}
+.table > thead > tr{
+    background: #f2f2f2;
+}
+.table > thead > tr > th{
+    text-align: center;
+    line-height: 24px;
+    font-size: 13px;
+}
+.table > tbody > tr > td{
+    text-align: center;
+}
+.ticket_banner > tbody > tr > td{
+    line-height: 40px;
+}
+.ticket_taking > tbody > tr:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.ticket_taking > tbody > tr > td{
+    line-height: 60px;
+    font-size: 14px;
+}
+/*弹窗*/
+.dialog-window{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+    padding: 50px;
+    display: none;
+}
+.dialog-content{
+    background: #ffffff;
+    height: 680px;
+    width: 100%;
+    border-radius: 5px;
+}
+.dialog-main{
+    padding-top: 20px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+.dialog-title{
+    border-left:4px solid #2290FE;
+    font-size: 20px;
+    padding-left: 10px;
+    float: left;
+}
+.dialog-pass{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.dialog-pass-box{
+    width: 600px;
+    height: 350px;
+    background: #ffffff;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -175px;
+    position: absolute;
+    border: 1px solid #f2f2f2;
+}
+.dialog-pass-title{
+    padding: 30px 20px;
+    font-size: 16px;
+    font-size: 18px;
+}
+.dialog-pass-title .pe-7s-close{
+    float: right;
+    margin-top: -8px;
+}
+.dialog-pass-title .pe-7s-close:before{
+    font-size: 40px;
+}
+.dialog-pass-btn{
+    padding: 0 40px;
+}
+/*.dialog-pass-btn button{
+    padding: 10px 50px;
+}*/
+
+/*详情弹窗*/
+.dialog-ofy{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-height: 100%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.dialog-detail-of{
+    overflow: hidden;
+}
+.dialog-detail-title{
+    background: #e9f5fe;
+    padding: 20px 40px;
+    font-size: 20px;
+    color: #2290FE;
+    position: relative;
+    overflow: hidden;
+}
+.dialog-contract{
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+}
+.dialog-detail-m{
+    margin: 20px 40px;
+}
+.dialog-detail-pr{
+    padding-right: 40px;
+}
+.dialog-accout-infor{
+    padding: 20px;
+    background: #f2f2f2;
+    font-size: 14px;
+    color: #888888;
+    overflow: hidden;
+}
+.dialog-accout-khh{
+    display: inline-block;
+    margin-left: 40px;
+}
+.dialog-accout-price{
+    font-size: 17px;
+}
+.dialog-detail-supplement span{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #ddd;
+    margin-right: 10px;
+    border: 1px solid #888;
+}
+.dialog-detail-supplement textarea{
+    width: 100%;
+    border-width: 0;
+}
+.vertical-timeline-block{
+    margin: 60px 0;
+}
+.vertical-timeline-content{
+    height: 108px;
+    background: #f2f2f2;
+    margin: 0 15rem 0 10rem;
+    font-size: 18px;
+}
+.vertical-timeline-content:after{
+    border-right-color: #f2f2f2;
+}
+.vertical-timeline-icon{
+    background: #aaa;
+}
+.vertical-timeline-icon .icon-wcx{
+    position: absolute;
+    top: -1px;
+    left: 9px;
+    opacity: 0;
+}
+.vertical-timeline-icon.on .icon-wcx{
+    opacity: 1;
+}
+.vertical-timeline-icon .icon-wcx:before{
+    font-size: 44px;
+    color: #3ECD5A;
+    background: #fff;
+}
+.vertical-timeline-icon:after{
+    content: "";
+    width: 5px;
+    height: 129px;
+    background: #aaa;
+    position: absolute;
+    top: 39px;
+    left: 17px;
+    z-index: 111;
+}
+.vertical-timeline-icon.on:after{
+    background: #3ECD5A;
+}
+.vertical-timeline-photo span{
+    display: inline-block;
+    width: 76px;
+    height: 76px;
+    border-radius: 75px;
+    background: #ccc;
+    border: 1px solid #aaa;
+}
+.vertical-timeline-block:last-child .vertical-timeline-icon:after{
+    height: 0;
+}
+.vertical-timeline-state{
+    padding-top: 6px;
+    margin-left: 20px;
+}
+.vertical-timeline-post{
+    padding-bottom: 10px;
+}
+.vertical-timeline-cc{
+    margin: 40px 10px;
+}
+.vertical-timeline-send{
+    font-size: 18px;
+    padding: 20px 20px 20px 0;
+}
+.vertical-timeline-list{
+    background: #f2f2f2;
+    padding: 20px;
+    margin-right: 15rem;
+    color: #555;
+    font-size: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-orient: center;
+    -webkit-box-pack: center;
+}
+.vertical-timeline-ccList{
+    text-align: center;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-box-flex:1;
+    flex: 1;
+}
+.vertical-timeline-ccList span{
+    display: block;
+    width: 76px;
+    height: 76px;
+    border-radius: 75px;
+    background: #ccc;
+    border: 1px solid #aaa;
+    margin-left: 5.4rem;
+    margin-bottom: 20px;
+}
+
+/*通过弹窗*/
+.dialog-pass{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.dialog-pass-box{
+    width: 600px;
+    height: 350px;
+    background: #ffffff;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -175px;
+    position: absolute;
+    border: 1px solid #f2f2f2;
+}
+.dialog-pass-text{
+    text-align: center;
+    color: #2290FE;
+    padding: 40px 0;
+    font-size: 14px;
+}
+.dialog-pass-input{
+    padding: 0 40px 20px;
+}
+.dialog-pass-input textarea{
+    width: 100%;
+    height: 100px;
+    border-width: 0;
+}
+.dialog-pass-btn{
+    padding: 0 40px;
+}
+/*.dialog-pass-btn button{
+    padding: 10px 50px;
+}*/
+.hb-activity{
+    font-size: 14px;
+}
+.hb-activity > tbody > tr > td{
+    line-height: 44px;
+}
+.hb-activity > tbody > tr:last-child{
+    border-bottom: 1px solid #ddd;
+}
+
+.hb-activity > tbody > tr > td.btn-add{
+    text-align: left;
+    line-height: 18px;
+}
+.hb-activity > tbody > tr > td .pe-7s-plus:before{
+    font-size: 40px;
+}
+.hb-activity > tbody > tr > td span{
+    vertical-align: 12px;
+    font-size: 16px;
+}
+.hb-activity > tbody > tr > td button{
+    margin-top: 7px;
+}
+.activity-set{
+    border-left: 6px solid #2290FE;
+    height: 24px;
+    font-size: 18px;
+    padding-left: 10px;
+    margin-left: -31px;
+}
+
+
+.switch-state{
+    font-size: 12px;
+    margin: 24px 0;
+}
+.activity-state{
+    font-size: 14px;
+}
+.ui-switch {
+    font-size: 16px;
+    right: 15px;
+    top: 50%;
+    margin-top: -16px;
+    width: 46px;
+    height: 26px;
+    line-height: 32px;
+    vertical-align: -8px;
+    margin-left: 20px;
+    margin-right: 5px;
+}
+.ui-switch input {
+    width: 46px;
+    height: 26px;
+    position: absolute;
+    z-index: 2;
+    border: 0;
+    background: 0 0;
+    -webkit-appearance: none;
+    outline: 0;
+}
+.ui-switch input:before {
+    content: '';
+    width: 44px;
+    height: 25px;
+    border: 1px solid #dfdfdf;
+    background-color: #fdfdfd;
+    border-radius: 20px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    border-color: #dfdfdf;
+    -webkit-box-shadow: #dfdfdf 0 0 0 0 inset;
+    box-shadow: #dfdfdf 0 0 0 0 inset;
+    -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s;
+    transition: border 0.4s, box-shadow 0.4s;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
+.ui-switch input:checked:before {
+    border-color: #2290FE;
+    -webkit-box-shadow: #2290FE 0 0 0 16px inset;
+    box-shadow: #2290FE 0 0 0 16px inset;
+    transition: border 0.4s, box-shadow 0.4s, background-color 1.2s;
+    -webkit-transition: border 0.4s, -webkit-box-shadow 0.4s, background-color 1.2s;
+    background-color: #2290FE;
+}
+.ui-switch input:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    border-radius: 100%;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-transition: left .2s;
+    transition: left .2s;
+}
+.ui-switch input:checked:after {
+    left: 21px;
+}
+
+
+/*抢券活动*/
+.entrance-icon{
+    overflow: hidden;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.entrance-icon > div{
+    float: left;
+    margin-right: 10px;
+}
+.icon-add{
+    width: 70px;
+    height: 70px;
+    border: 1px dashed #ccc;
+}
+.icon-add > .icon-zj:before{
+    font-size: 50px;
+    margin-left: 8px;
+    color: #a9a9a9;
+}
+.icon-preview{
+    width: 120px;
+    height: 70px;
+    background: #f2f2f3;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.icon-preview span{
+    display: block;
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+}
+.icon-previews{
+    width: 70px;
+    height: 70px;
+    background: #f2f2f3;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.icon-previews span{
+    display: block;
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    font-size: 12px;
+}
+.icon-infor{
+    font-size: 12px;
+}
+.icon-infor > p:first-child{
+    color: #333;
+}
+.activity-details > tbody > tr > td{
+    line-height: 70px;
+    font-size: 14px;
+}
+.activity-details > tbody > tr:last-child{
+    border-bottom: 1px solid #ddd;
+}
+.btn-create{
+    font-size: 12px;
+    padding: 7px 24px;
+}
+.btn-operation{
+    background: #f2f2f2;
+    border-color: #f2f2f2;
+    color: #888;
+}
+.btn-screen{
+    font-size: 12px;
+    padding: 7px 24px;
+}
+.btn-handle{
+    margin-right: 4px;
+}
+.btn-handle a{
+    display: inline-block;
+    width: 64px;
+    font-size: 13px;
+    padding: 6px 0;
+    text-align: center;
+    background: #f4f4f4;
+    color: #999;
+    margin-right: -4px;
+}
+.btn-handle a.on{
+    background: #2290FE;
+    color: #fff;
+}
+.btn-increase{
+    padding: 2px 10px;
+    margin-left: 20px;
+}
+.btn-increase span{
+    font-size: 14px;
+}
+
+
+/*创建抢券活动*/
+.dialog-row{
+    width: 100%;
+    padding: 5px 20px;
+    overflow: hidden;
+}
+.ac-rule{
+    border-radius: 0;
+}
+.aced-rule{
+    border-left: 1px solid #e4e5e7;
+    border-bottom: 1px solid #e4e5e7;
+    border-right: 1px solid #e4e5e7;
+    padding: 10px;
+    margin-top: -20px;
+}
+/*预览效果*/
+.activity-preview{
+    width: 320px;
+    height: 568px;
+    padding: 5px 15px 20px;
+}
+.activity-preview-main{
+    width: 100%;
+    height: 100%;
+    padding: 0 0 23px;
+}
+.activity-preview-tab{
+    text-align: center;
+}
+.activity-preview-tab > a{
+    padding: 2px 18px;
+    border: 1px solid #ddd;
+    display: inline-block;
+    margin-left: -4px;
+}
+.activity-preview-tab > a.on{
+    background: #2290FE;
+    border: 1px solid #2290FE;
+    color: #fff;
+}
+.activity-preview-content{
+    border: 1px solid #ddd;
+    height: 100%;
+    margin-top: 5px;
+}
+.activity-preview-header{
+    height: 48px;
+    background: #FF7570;
+    color: #fff;
+}
+.activity-preview-header-name{
+    height: 29px;
+    line-height: 29px;
+    position: relative;
+}
+.activity-preview-header-name > .pe-7s-angle-left{
+    position: absolute;
+    left: 10px;
+}
+.activity-preview-header-name > .pe-7s-angle-left:before{
+    font-size: 33px;
+}
+.activity-preview-header-name > span{
+    position: absolute;
+    right: 10px;
+}
+.activity-preview-banner{
+    height: 120px;
+    position: relative;
+}
+.activity-preview-banner img{
+    width: 100%;
+}
+.activity-preview-banner-btm{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.activity-preview-box{
+    padding: 10px;
+    background: #FFE589;
+}
+.activity-preview-coupon{
+    width: 100%;
+    height: 330px;
+    border: 1px solid rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.6);
+    border-radius: 4px;
+    position: relative;
+}
+ul,li{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+}
+.activity-preview-cp{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+    margin: 10px 10px;
+    -webkit-box-align: center;
+    -webkit-box-orient: center;
+    -webkit-box-pack: center;
+    background: #fff;
+    position: relative;
+}
+.activity-preview-infor{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+
+}
+.preview-infor-park{
+    font-size: 14px;
+    font-weight: bold;
+}
+.preview-infor-time{
+    font-size: 12px;
+    color: #999;
+}
+.activity-preview-price{
+    width: 50px;
+    text-align: center;
+    border-left: 1px dashed #FFE589;
+    line-height: 56px;
+}
+.activity-preview-instr{
+    text-align: center;
+    font-size: 12px;
+}
+.activity-preview-btn{
+    padding: 10px;
+    border-bottom: 1px dashed #FFE589;
+}
+.activity-preview-rule{
+    padding: 10px;
+}
+.preview-top-avatar{
+    position: absolute;
+    right: 44px;
+    top: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    background: #FFE589;
+}
+.preview-top-avatar span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    position: absolute;
+}
+.preview-bottom-avatar{
+    position: absolute;
+    bottom: -6px;
+    right: 44px;
+    width: 12px;
+    height: 12px;
+    border-radius: 8px;
+    background: #FFE589;
+}
+.preview-bottom-avatar span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    position: absolute;
+}
+
+.preview-left-avatar{
+    position: absolute;
+    left: -8px;
+    top: 143px;
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    background: #FFE589;
+}
+.preview-right-avatar{
+    position: absolute;
+    top: 143px;
+    right: -8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 8px;
+    background: #FFE589;
+}
+/*查看链接弹出窗*/
+.dialog-checklink{
+    width: 638px;
+    height: 191px;
+    background: #fff;
+    margin: 50px auto;
+    text-align: center;
+}
+.dialog-checklink-title{
+    font-size: 14px;
+    padding-top: 40px;
+    position: relative;
+}
+.dialog-checklink-title > .pe-7s-close{
+    position: absolute;
+    right: 20px;
+    top: -10px;
+    color: #999;
+}
+.dialog-checklink-title > .pe-7s-close:before{
+    font-size: 80px;
+}
+.dialog-checklink-form{
+    margin: 20px 40px 15px;
+}
+.dialog-checklink-form > .form-control{
+    padding: 20px 12px;
+    border-radius: 0;
+}
+.dialog-checklink-btn > .btn-cancel{
+    padding: 8px 56px;
+}
+/*删除确认弹出窗*/
+.dialog-delete{
+    width: 326px;
+    height: 191px;
+    background: #fff;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+}
+.dialog-delete-title{
+    padding-top: 45px;
+}
+.dialog-delete-btn{
+    margin-top: 45px;
+}
+.dialog-delete-btn > button:first-child{
+    margin-right: 20px;
+}
+.dialog-delete-btn > button:last-child{
+    margin-left: 20px;
+}
+
+/*添加奖项*/
+.dialog-pass-form{
+    font-size: 14px;
+}
+.btn-cancel{
+    background: #e9f5fe;
+    border-color: #2290FE;
+    padding: 8px 25px;
+    border-radius: 0;
+    color: #2290FE;
+    font-size: 12px;
+}
+.btn-sure{
+    padding: 8px 36px;
+    font-size: 12px;
+}
+/*查看数据统计*/
+.data-statistics{
+    margin: 0 30px;
+}
+.hpanel.hbggreen .panel-body {
+    background: rgba(2, 201, 144, 1);
+    color: #fff;
+    border: none;
+    padding: 35px 20px;
+}
+.hpanel.hbgblue .panel-body {
+    background: rgba(62, 173, 252, 1);
+    color: #fff;
+    border: none;
+    padding: 35px 20px;
+}
+.hpanel.hbgyellow .panel-body {
+    background: rgba(255, 162, 95, 1);
+    color: #fff;
+    border: none;
+    padding: 35px 20px;
+}
+
+/*气泡*/
+.dialog-ct{
+    position: relative;
+}
+.dialog-qp{
+    position: absolute;
+    min-width: 160px;
+    bottom: 33px;
+    left: -23px;
+}
+.example {
+	margin-top: 20px;
+	margin-bottom: 20px
+}
+.example:after,.example:before {
+	display: table;
+	content: " "
+}
+
+.example:after {
+	clear: both
+}
+
+.example:after,.example:before {
+	display: table;
+	content: " "
+}
+
+.example:after {
+	clear: both
+}
+.example-tooltip {
+	position: relative;
+	z-index: 1;
+	display: inline-block
+}
+.example-tooltip .tooltip {
+	position: relative;
+	margin-right: 25px;
+	opacity: 1
+}
+.tooltip {
+	position: absolute;
+	z-index: 1900;
+	display: block;
+	font-family: "Helvetica Neue",Helvetica,Tahoma,Arial,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1.6;
+	text-align: left;
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	letter-spacing: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+	white-space: normal;
+	opacity: 0;
+	line-break: auto
+}
+
+.tooltip.in {
+	opacity: .9
+}
+
+.tooltip.top {
+	padding: 4px 0;
+	margin-top: -3px
+}
+
+.tooltip.right {
+	padding: 0 4px;
+	margin-left: 3px
+}
+
+.tooltip.bottom {
+	padding: 4px 0;
+	margin-top: 3px
+}
+
+.tooltip.left {
+	padding: 0 4px;
+	margin-left: -3px
+}
+
+.tooltip-inner {
+	max-width: 200px;
+	padding: 7px 12px;
+	color: #fff;
+	text-align: center;
+	background-color: rgba(0,0,0,.8);
+	border-radius: 3px
+}
+
+.tooltip-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-color: transparent;
+	border-style: solid
+}
+
+.tooltip.top .tooltip-arrow {
+	bottom: 0;
+	left: 50%;
+	margin-left: -4px;
+	border-width: 4px 4px 0;
+	border-top-color: rgba(0,0,0,.8)
+}
+
+.tooltip.top-left .tooltip-arrow {
+	right: 4px;
+	bottom: 0;
+	margin-bottom: -4px;
+	border-width: 4px 4px 0;
+	border-top-color: rgba(0,0,0,.8)
+}
+
+.tooltip.top-right .tooltip-arrow {
+	bottom: 0;
+	left: 4px;
+	margin-bottom: -4px;
+	border-width: 4px 4px 0;
+	border-top-color: rgba(0,0,0,.8)
+}
+
+.tooltip.right .tooltip-arrow {
+	top: 50%;
+	left: 0;
+	margin-top: -4px;
+	border-width: 4px 4px 4px 0;
+	border-right-color: rgba(0,0,0,.8)
+}
+
+.tooltip.left .tooltip-arrow {
+	top: 50%;
+	right: 0;
+	margin-top: -4px;
+	border-width: 4px 0 4px 4px;
+	border-left-color: rgba(0,0,0,.8)
+}
+
+.tooltip.bottom .tooltip-arrow {
+	top: 0;
+	left: 50%;
+	margin-left: -4px;
+	border-width: 0 4px 4px;
+	border-bottom-color: rgba(0,0,0,.8)
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+	top: 0;
+	right: 4px;
+	margin-top: -4px;
+	border-width: 0 4px 4px;
+	border-bottom-color: rgba(0,0,0,.8)
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+	top: 0;
+	left: 4px;
+	margin-top: -4px;
+	border-width: 0 4px 4px;
+	border-bottom-color: rgba(0,0,0,.8)
+}
+
+
+
+/*轮播banner*/
+.activity-banner{
+    border-top: 1px solid #ddd;
+    padding: 30px;
+}
+.blog-box{
+    border-radius: 0;
+}
+
+.blog-box:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4)
+}
+.banner-operation{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-box-orient: center;
+    -webkit-box-pack: center;
+    background: #f2f2f2;
+    border: 1px solid #ddd;
+    margin-top: -1px;
+    text-align: center;
+}
+.banner-operation > .banner-operation-list{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+}
+.banner-operation > .banner-operation-list:last-child{
+    border-right: 0;
+}
+
+/*创建banner页广告*/
+.banner-upload{
+    width: 100%;
+    height: 220px;
+    border: 1px dashed #ddd;
+    background: #f2f2f2;
+    position: relative;
+}
+.banner-upload > div{
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    left: 50%;
+    margin-left: -65px;
+    text-align: center;
+    color: #999;
+}
+.banner-preview-content {
+    border: 1px solid #ddd;
+    height: 100%;
+    background: #f2f3f3;
+}
+.banner-preview-header{
+    height: 48px;
+    background: #fff;
+    color: #333;
+}
+.banner-preview-header-name{
+    height: 29px;
+    line-height: 29px;
+    position: relative;
+}
+.banner-preview-header-name > .pe-7s-angle-left{
+    position: absolute;
+    left: 10px;
+}
+.banner-preview-header-name > .pe-7s-angle-left:before{
+    font-size: 33px;
+}
+.banner-preview-header-name > span{
+    position: absolute;
+    right: 10px;
+}
+.activity-preview-banner{
+    height: 120px;
+    position: relative;
+}
+.activity-preview-banner img{
+    width: 100%;
+}
+.activity-preview-banner-btm{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

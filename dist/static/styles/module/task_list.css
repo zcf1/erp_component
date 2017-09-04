@@ -1,0 +1,87 @@
+.task-main{
+    background: #f2f2f2;
+    padding: 15px 12px;
+}
+.task-title{
+    background: #fff;
+    padding: 20px;
+}
+.task-title-list{
+    font-size: 20px;
+}
+.task-title-list .pe-7s-angle-right-circle{
+    float: right;
+}
+.task-title-list .pe-7s-angle-right-circle:before{
+    font-size: 24px;
+}
+.task-content{}
+.task-list{
+    background: #fff;
+    padding: 10px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.task-list span{
+    display: inline-block;
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: #999;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+.task-list-infor{
+    margin-top: 14px;
+    margin-left: 12px;
+}
+.task-time{
+    width: 100px;
+    height: 30px;
+    background: #2290FE;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    float: left;
+    font-size: 12px;
+}
+.task-ongoing{
+    width: 100px;
+    height: 30px;
+    background: #FF5F5B;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    float: left;
+    font-size: 12px;
+}
+.task-completed{
+    width: 100px;
+    height: 30px;
+    background: #3ECD5A;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 3px;
+    float: left;
+    font-size: 12px;
+}
+.task-name{
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: #c6c6c6;
+    color: #fff;
+    line-height: 30px;
+    border-radius: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+input[type="checkbox"]{
+    vertical-align: -3px;
+}

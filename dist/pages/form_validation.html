@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../static/fonts/font-asesome.css" />
+<link rel="stylesheet" href="../static/fonts/iconfont/iconfont.css" />
+<link rel="stylesheet" href="../static/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+<link rel="stylesheet" href="../static/styles/bootstrap.css" />
+<link rel="stylesheet" href="../static/less/app.css" />
+<script src="../js/lib/js.cookie.js"></script>
+<script src="../js/utils/erp-authority.js"></script>
+<script src="../js/lib/require.js"></script>
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/security.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/lib/transition.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/app.js"></script>
+<title>我是测试标题</title>
+
+</head>
+<body>
+<div class="wrapper">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-heading hbuilt">
+                    基础表单
+                </div>
+                <div class="panel-body float-e-margins">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <form class="form-horizontal" id="formData">
+                                <div class="form-group">
+                                    <label for="inputEmail3" class="col-sm-2 control-label xfd-control-label">停车场</label>
+                                    <div class="col-sm-10">
+                                        <input type="email" data-type="email" class="form-control" id="inputEmail3" placeholder="Email" tips="请输入停车场">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">Password</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" data-type="password" class="form-control" id="inputPassword3" placeholder="Password" tips="请输入密码" name="password1">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">确认密码</label>
+                                    <div class="col-sm-10">
+                                        <input type="password" data-type="password" class="form-control" id="inputPassword4" placeholder="Password" tips="请输入密码" recheck="inputPassword3">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-2 control-label xfd-control-label">Email</label>
+                                    <div class="col-sm-10">
+                                        <p class="form-control-static">email@example.com</p>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">下拉</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-control" data-type="select" tips="请选择下拉框">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">切换</label>
+                                    <div class="col-sm-10">
+                                        <input type="checkbox" class="xfd-form-switch">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">多文本</label>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" data-type="required" rows="3" tips="请输入多文本"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">复选框</label>
+                                    <div class="col-sm-10">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" data-type="checkbox" name="info_type" value="option1" tips="请选择复选框"> 1
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" data-type="checkbox" name="info_type" value="option2" tips="请选择复选框"> 2
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" data-type="checkbox" name="info_type" value="option3" tips="请选择复选框"> 3
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">单选框</label>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline">
+                                            <input type="radio" data-type="radio" name="inlineRadioOptions" value="option1" tips="请选择单选框"> 1
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" data-type="radio" name="inlineRadioOptions" value="option2" tips="请选择单选框"> 2
+                                        </label>
+                                        <label class="radio-inline">
+                                            <input type="radio" data-type="radio" name="inlineRadioOptions" value="option3" tips="请选择单选框"> 3
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">自定义复选框</label>
+                                    <div class="col-sm-10">
+                                        <label class="checkbox-inline xfd-form-checkbox">
+                                            <input type="checkbox" data-type="checkbox" name="checkbox1" value="option1" tips="请选择复选框"> jack
+                                        </label>
+                                        <label class="checkbox-inline xfd-form-checkbox">
+                                            <input type="checkbox" data-type="checkbox" name="checkbox1" value="option1" tips="请选择复选框"> pock
+                                        </label>
+                                        <label class="checkbox-inline xfd-form-checkbox">
+                                            <input type="checkbox" data-type="checkbox" name="checkbox1" value="option1" tips="请选择复选框" disabled="disabled"> pock
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword3" class="col-sm-2 control-label xfd-control-label">自定义单选框</label>
+                                    <div class="col-sm-10">
+                                        <label class="radio-inline xfd-form-radio">
+                                            <input type="radio" data-type="radio" name="inlineRadioOptions1" value="option1" tips="请选择单选框"> 1
+                                        </label>
+                                        <label class="radio-inline xfd-form-radio">
+                                            <input type="radio" data-type="radio" name="inlineRadioOptions1" value="option1" tips="请选择单选框"> 1
+                                        </label>
+                                        <label class="radio-inline xfd-form-radio">
+                                            <input type="radio" data-type="radio" name="inlineRadioOptions1" value="option1" tips="请选择单选框"> 1
+                                        </label>
+                                        <label class="radio-inline xfd-form-radio">
+                                            <input type="radio" data-type="radio" name="inlineRadioOption1s" value="option1" tips="请选择单选框" disabled="disabled"> 1
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-offset-2 col-sm-10">
+                                        <button type="submit" class="btn xfd-btn xfd-btn-white xfd-btn-md">取消</button>
+                                        <button type="submit" class="btn xfd-btn xfd-btn-primary xfd-btn-md">立即创建</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+</div>
+<script type="text/javascript">
+    require(['controller/vaildform/index'], function (index) {
+
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title -->
+    <title>ERP管理系统</title>
+    
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../static/fonts/font-asesome.css" />
+<link rel="stylesheet" href="../static/fonts/iconfont/iconfont.css" />
+<link rel="stylesheet" href="../static/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+<link rel="stylesheet" href="../static/styles/bootstrap.css" />
+<link rel="stylesheet" href="../static/less/app.css" />
+<script src="../js/lib/js.cookie.js"></script>
+<script src="../js/utils/erp-authority.js"></script>
+<script src="../js/lib/require.js"></script>
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/security.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/lib/underscore-min.js"></script>
+<script src="../js/lib/transition.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/app.js"></script>
+<!--<script src="/js/common/layout.js"></script>-->
+<title>我是测试标题</title>
+<style>
+    body,html{
+        width:100%;
+        height:100%;
+        overflow:hidden;
+    }
+</style>
+</head>
+<body class="xfd-family">
+    <div class="xfd-header">
+        <!-- Header -->
+<div id="header" class="clearfix">
+    <!--<div class="color-line">
+    </div>-->
+    <div id="logo" class="light-version">
+        <img src="../static/styles/img/erp-logo.png" />
+    </div>
+    <div class="header-link" data-toggle="switch"><i class="iconfont icon-xiangqing1"></i></div>
+    <div class="header-btn-more">
+        <a href="javascript:;" id="header-menu-more"><i class="glyphicon glyphicon-option-vertical"></i></a>
+    </div>
+    <div class="navbar-right xfd-nav-user">
+        <ul class="nav navbar-nav no-borders">
+            <li class="dropdown">
+                <a class="dropdown-toggle label-menu-corner erp-uesr" href="javascript:;">
+                    <i class="iconfont icon-touxiang"></i> <span class="">某某某</span> <i class="fa fa-sort-down"></i>
+                </a>
+                <ul class="dropdown-menu hdropdown animated flipInX">
+                    <li class="personalInfo">
+                        <a href="usercenter.html">
+                            <i class="fa fa-user"></i>
+                            <span>个人资料</span>
+                        </a>
+
+                    </li>
+                    <li class="updatePwd">
+                        <a href="javascript:;">
+                            <i class="fa fa-pencil"></i>
+                            <span>修改密码</span>
+                        </a>
+
+                    </li>
+                    <li class="exit">
+                        <a href="javascript:;">
+                            <i class="fa fa-power-off"></i>
+                            <span>退出</span>
+                        </a>
+
+                    </li>
+                </ul>
+
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-right xfd-nav-menu">
+        <ul class="nav navbar-nav no-borders  xfd-top-nav">
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="http://www.cheweiguanjia.com/" target="_blank">
+                    <span>停车钱包官网</span>
+                    <i class="iconfont icon-zuochakan"></i>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="http://ym.163.com/" target="_blank">
+                    <span>办公邮箱</span>
+                    <i class="iconfont icon-zuochakan"></i>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle label-menu-corner" href="http://v.cheweiguanjia.com/" target="_blank">
+                    <span>商户端下载</span>
+                    <i class="iconfont icon-zuochakan"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://v.cheweiguanjia.com/" target="_blank" class="right-sidebar-toggle">
+                    <span>车场端下载</span>
+                    <i class="iconfont icon-zuochakan"></i>
+                </a>
+            </li>
+            <li>
+                <a href="http://cz1.api1.cheweiguanjia.com/html/erp/parkFile.html" target="_blank" class="right-sidebar-toggle">
+                    <span>更新停车场列表</span>
+                    <i class="iconfont icon-zuochakan"></i>
+                </a>
+            </li>
+            <li>
+                <div class="line"></div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+    <div class="xfd-menu">
+        <!-- Navigation -->
+<aside id="menu">
+    <div id="navigation">
+        <ul class="nav" id="side-menu">
+
+            <li>
+                <a href="javascript:;"><span class="nav-label">ui基本组件</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="icon.html" data-menukey="1">字体图标</a></li>
+                    <li><a href="api.html" data-menukey="2">API组件</a></li>
+                    <li><a href="button.html" data-menukey="3">按钮组件</a></li>
+                    <li><a href="tabs.html" data-menukey="4">切换组件</a></li>
+                    <li><a href="table.html" data-menukey="5">表格组件</a></li>
+                    <li><a href="date.html" data-menukey="6">时间组件</a></li>
+                    <li><a href="form.html" data-menukey="7">表单组件</a></li>
+                    <li><a href="prompt.html" data-menukey="8">消息、通知组件</a></li>
+                    <li><a href="progress.html" data-menukey="9">进度条、滑块组件</a></li>
+                    <li><a href="tag.html" data-menukey="10">标签</a></li>
+                    <li><a href="step_bar.html" data-menukey="11">步骤条</a></li>
+                    <li><a href="upload.html" data-menukey="12">上传</a></li>
+                    <li><a href="bubble.html" data-menukey="13">气泡</a></li>
+                    <li><a href="rich_text.html" data-menukey="14">富文本</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:;"><span class="nav-label">js component</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="dialog.html" data-menukey="15">弹框,提示</a></li>
+                    <li><a href="form_validation" data-menukey="16">表单验证</a></li>
+                    <li><a href="pagination" data-menukey="17">分页组件</a></li>
+                    <li><a href="linkage.html" data-menukey="18">级联组件</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://192.168.1.60:9000" data-menukey="19" class="single-menu">测试界面</a>
+            </li>
+            <li>
+                <a href="text.html" data-menukey="20" class="single-menu">测试界面</a>
+            </li>
+            <li>
+                <a href="javascript:;"><span class="nav-label">案例</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+                    <li><a href="card.html" data-menukey="21">卡片</a></li>
+                    <li><a href="circle_progress.html" data-menukey="22">环形进度条</a></li>
+                    <li><a href="step.html" data-menukey="23">步骤</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</aside>
+    </div>
+    <div class="xfd-contabs">
+        <div class="xfd-icon xfd-float-left"><i class="iconfont icon-youchakan"></i></div>
+        <div class="xfd-nav-content">
+            <ul class="nav nav-pills" id="navPills" data-width="92">
+                <li role="presentation" class="active" data-navkey="0" name="nav0"><a href="javascript:;">首页</a></li>
+            </ul>
+        </div>
+        <div class="xfd-icon xfd-nav-right"><i class="iconfont icon-zuochakan"></i></div>
+        <div class="xfd-more">
+            <div><i class="iconfont icon-xiala"></i></div>
+            <ul class="dropdown-menu xfd-contabs-dropdown" role="menu">
+                <li class="reload-page" role="presentation">
+                    <a href="javascript:" role="menuitem"><i class="icon wb-reload"></i> 刷新当前</a>
+                </li>
+                <li class="close-other" role="presentation">
+                    <a href="javascript:" role="menuitem"><i class="icon wb-close"></i> 关闭其他</a>
+                </li>
+                <li class="close-all" role="presentation">
+                    <a href="javascript:" role="menuitem"><i class="icon wb-power"></i> 关闭所有</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="xfd-content">
+        <iframe class="xfd-iframe on-show" name="iframe0" data-id="0" src="welcome.html"></iframe>
+    </div>
+    <iframe src="" frameborder="0" style="display:none;" id="hide-iframe"></iframe>
+    <script type="text/javascript">
+        require(['common/main'], function () {
+          
+            
+           
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.city-data{
+    border: 2px solid #eee;
+}
+.data-city{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    font-weight: bold;
+}
+.data-city a{
+    float: right;
+    color: #2290FE;
+}
+.data-list{
+    padding: 10px;
+}
+.data-list li{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    margin-top: 10px;
+}
+.data-list li:first-child{
+    margin-top: 0;
+}
+.data-list li .data-list-name{
+    font-size: 14px;
+    width: 6.5rem;
+    padding-top: 4px;
+    color: #555;
+}
+.data-list li .data-list-rate{
+    -webkit-box-flex: 1;
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+}
+.data-rate-primary{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-primary .on{
+    width: 40%;
+    background: #2290FE;
+    border-radius: 2px;
+    height: 28px;
+}
+
+.data-rate-warn{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-warn .on{
+    width: 30%;
+    background: #FF9966;
+    border-radius: 2px;
+    height: 28px;
+}
+.data-rate-success{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-success .on{
+    width: 50%;
+    background: #3ECD5A;
+    border-radius: 2px;
+    height: 28px;
+}
+.data-rate-purple{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-purple .on{
+    width: 20%;
+    background: #9e59e6;
+    border-radius: 2px;
+    height: 28px;
+}
+
+.data-rate-red{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-red .on{
+    width: 30%;
+    background: #FF5F5B;
+    border-radius: 2px;
+    height: 28px;
+}
+
+.data-rate-green{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-green .on{
+    width: 40%;
+    background: #1CAF9A;
+    border-radius: 2px;
+    height: 28px;
+}
+
+.data-rate-blue{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-blue .on{
+    width: 70%;
+    background: #A2D1FF;
+    border-radius: 2px;
+    height: 28px;
+}
+
+.data-rate-yellow{
+    width: 100%;
+    background: #eee;
+    border-radius: 2px;
+    height: 28px;
+    line-height: 28px;
+}
+.data-rate-yellow .on{
+    width: 40%;
+    background: #CFB53B;
+    border-radius: 2px;
+    height: 28px;
+}

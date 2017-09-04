@@ -1,0 +1,35 @@
+.btn-linkage select.xfd-select-linkage{
+    display: inline-block !important;
+    visibility: hidden;
+    width:220px !important;
+    left:0;
+}
+.btn-linkage .btn-group > .btn, .btn-linkage .form-control {
+    border-radius: 2px !important;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 9px 16px;
+    height: 32px; 
+    outline: none !important;
+}
+.btn-linkage .btn-group > .btn {
+    border: 1px solid #E4E9ED; 
+    color: #2C393F;
+}
+.btn-linkage .btn-default:hover, .btn-linkage .btn-default:focus, .btn-linkage .btn-default:active, .btn-linkage .open > .dropdown-toggle.btn-default {
+    background-color: #f2f5f8;
+    box-shadow: none;
+    border: 1px solid #E4E9ED;
+    color: #57636F;
+}
+.bootstrap-select.btn-group .dropdown-menu li a{
+    padding: 12px 8px;
+    font-size: 12px;
+    line-height: 12px;
+    height: 40px;
+    color: #57636F;
+}
+.bootstrap-select.btn-group .dropdown-menu li a:hover{
+    background: #FAFBFC;
+    cursor: pointer;
+}

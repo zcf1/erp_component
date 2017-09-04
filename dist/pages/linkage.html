@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>级联</title>
+    
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="stylesheet" href="../static/fonts/font-asesome.css" />
+<link rel="stylesheet" href="../static/fonts/iconfont/iconfont.css" />
+<link rel="stylesheet" href="../static/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+<link rel="stylesheet" href="../static/styles/bootstrap.css" />
+<link rel="stylesheet" href="../static/less/app.css" />
+<script src="../js/lib/js.cookie.js"></script>
+<script src="../js/utils/erp-authority.js"></script>
+<script src="../js/lib/require.js"></script>
+<script src="../js/lib/jquery.min.js"></script>
+<script src="../js/lib/security.js"></script>
+<script src="../js/lib/bootstrap.min.js"></script>
+<script src="../js/lib/transition.js"></script>
+<script src="../js/config.js"></script>
+<script src="../js/app.js"></script>
+<title>我是测试标题</title>
+
+    <link rel="stylesheet" href="../js/lib/highlight/styles/atom-one-light.css" />
+    <link href="../js/lib/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="../static/styles/module/linkage.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default ">
+                    <div class="panel-heading hbuilt">
+                        联级组件
+                    </div>
+                    <div class="panel-body float-e-margins">
+                        <div class="btn-linkage">
+                            <select id="citySelect" class="selectpicker xfd-select-linkage" data-nms="true" data-nms-src="city.json?filter=$values" data-nms-target="#saleSelect" title="请选择...">
+                            </select>
+                            <select id="saleSelect" class="selectpicker xfd-select-linkage" data-nms="true" data-nms-src="sale.json?filter=$values" title="请选择...">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <pre><code class="javascript  hljs">
+                            //1.初始化 data-nms
+                            //依据data-nms对下拉框进行初始化
+
+                            //2.初始化方法 
+                            //配置参数链接：http://silviomoreto.github.io/bootstrap-select/options/
+                            $('.selectpicker').selectpicker({
+                                //...
+                            });
+
+
+                            //3.接口请求地址 data-nms-src
+
+                            //4.关联子集 data-nm-target
+
+                            //5.多选 multiple
+                            select$.attr("multiple", "multiple");
+
+                            //6.搜索 data-live-search="true"
+                            select$.attr("data-live-search", "true");
+
+                            //7.全选/取消 data-actions-box="true"
+                            select$.attr("data-actions-box", "true");
+
+                            //8.所选文字格式 data-selected-text-format
+                            //values：以逗号分隔的所选值列表（默认）+
+                            //count：如果选择了一个项目，则显示选项值。如果选择了多个，则显示所选项目的数量，例如2 of 6 selected
+                            //count > x：在哪里x是项目中选择的数目时，从所述显示格式的变化values，以count
+                            //static：无论选择如何，始终显示选择标题（占位符）
+                            select$.attr("data-selected-text-format", "count");
+
+                            //9.菜单大小 data-size
+                            select$.attr("data-size", "5");
+
+                            //10.数据改变事件
+                            $(".selectpicker").on('changed.bs.select',function(){
+                                //...
+                            });
+
+                            //11.更新内容刷新到相应的位置
+                            $('.selectpicker').selectpicker("refresh");
+                            $('.selectpicker').selectpicker("render");
+                            </code></pre>
+                        <div class="xfd-m-t">
+                            <a href="http://silviomoreto.github.io/bootstrap-select/">官方文档</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        require(['controller/linkage/index'], function (index) {
+
+        });
+    </script>
+</body>
+</html>
