@@ -1,0 +1,405 @@
+[
+  {
+    "subMunu": [],
+    "name": "个人首页",
+    "description": "首页菜单",
+    "menuId": 8,
+    "url": "index"
+  },
+  {
+    "subMunu": [],
+    "name": "电视墙",
+    "description": "电视墙1",
+    "menuId": 71,
+    "url": "#"
+  },
+  {
+    "subMunu": [],
+    "name": "提现总览",
+    "description": "提现总览",
+    "menuId": 103,
+    "url": "withdrawReport"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "IMS消息推送",
+        "description": "",
+        "menuId": 77,
+        "url": "imsRecord"
+      }
+    ],
+    "name": "IMS推送",
+    "description": "",
+    "menuId": 76,
+    "url": "#"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "异常数据监控",
+        "description": "异常数据监控",
+        "menuId": 47,
+        "url": "scalping"
+      },
+      {
+        "name": "电视防刷单报警",
+        "description": "电视防刷单报警",
+        "menuId": 48,
+        "url": "walletAlertTV"
+      },
+      {
+        "name": "分站排行",
+        "description": "电视墙分站排行",
+        "menuId": 62,
+        "url": "tvIndex"
+      },
+      {
+        "name": "城市年/月度目标",
+        "description": "城市年/月度目标",
+        "menuId": 70,
+        "url": "tvWallCitySet"
+      },
+      {
+        "name": "总站排行登录",
+        "description": "福州总站排行",
+        "menuId": 72,
+        "url": "loginTvbyFZ"
+      },
+      {
+        "name": "总站排行",
+        "description": "",
+        "menuId": 73,
+        "url": "tvIndexfz"
+      },
+      {
+        "name": "年/月度目标",
+        "description": "",
+        "menuId": 74,
+        "url": "tvWallSet"
+      },
+      {
+        "name": "销售员年 /月度目标设置",
+        "description": "",
+        "menuId": 75,
+        "url": "tvWallSaleMonthSet"
+      }
+    ],
+    "name": "刷单监控平台",
+    "description": "刷单监控平台",
+    "menuId": 46,
+    "url": "scalping"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "test11ddddd",
+        "description": "test11",
+        "menuId": 98,
+        "url": "userMsg"
+      }
+    ],
+    "name": "test",
+    "description": "111",
+    "menuId": 94,
+    "url": "#"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "绑定车牌审核",
+        "description": "",
+        "menuId": 80,
+        "url": "plateNumberAutid"
+      },
+      {
+        "name": "车牌解绑日志",
+        "description": "",
+        "menuId": 81,
+        "url": "unbundlingNumberLog"
+      },
+      {
+        "name": "用户信息查询",
+        "description": "用户信息查询",
+        "menuId": 82,
+        "url": "userInfoInquire"
+      },
+      {
+        "name": "异常信息查询",
+        "description": "异常信息查询",
+        "menuId": 92,
+        "url": "abnormalMsg"
+      },
+      {
+        "name": "订单查询与退单",
+        "description": "",
+        "menuId": 101,
+        "url": "queryNoFlagOrder"
+      }
+    ],
+    "name": "客服",
+    "description": "客服部门功能模块",
+    "menuId": 79,
+    "url": "#"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "停车场管理",
+        "description": "停车场管理",
+        "menuId": 17,
+        "url": "parkingMsg"
+      },
+      {
+        "name": "商户管理",
+        "description": "商户管理",
+        "menuId": 18,
+        "url": "businessMsg"
+      },
+      {
+        "name": "销售业绩",
+        "description": "销售业绩",
+        "menuId": 31,
+        "url": "Sales_performance"
+      },
+      {
+        "name": "商圈配置",
+        "description": "",
+        "menuId": 44,
+        "url": "businessCircle"
+      },
+      {
+        "name": "停车场当日支付情况",
+        "description": "停车场当日支付情况显示",
+        "menuId": 58,
+        "url": "parkTodayPaySituation"
+      },
+      {
+        "name": "车主领买券交易信息",
+        "description": "车主转赠、买券、领券、交易情况详细信息",
+        "menuId": 60,
+        "url": "showParkTicketRecord"
+      },
+      {
+        "name": "推广人员列表",
+        "description": "推广人员列表",
+        "menuId": 83,
+        "url": "salesmanMsg"
+      },
+      {
+        "name": "推广统计",
+        "description": "推广统计",
+        "menuId": 85,
+        "url": "prom-count"
+      },
+      {
+        "name": "兑换码管理",
+        "description": "",
+        "menuId": 87,
+        "url": "mallCoupons"
+      },
+      {
+        "name": "订单查询",
+        "description": "订单查询",
+        "menuId": 91,
+        "url": "meterOrder"
+      }
+    ],
+    "name": "市场",
+    "description": "市场",
+    "menuId": 16,
+    "url": "meterOrder"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "财务进账详情",
+        "description": "财务进账详情",
+        "menuId": 25,
+        "url": "revenueList"
+      },
+      {
+        "name": "财务出账详情",
+        "description": "",
+        "menuId": 26,
+        "url": "acctountList"
+      },
+      {
+        "name": "停车场每日账单",
+        "description": "停车场每日账单",
+        "menuId": 27,
+        "url": "statparkpayment"
+      },
+      {
+        "name": "商户每日账单",
+        "description": "商户每日账单",
+        "menuId": 28,
+        "url": "businessAccountList"
+      },
+      {
+        "name": "停车场补贴奖励",
+        "description": "停车场补贴奖励",
+        "menuId": 29,
+        "url": "statparkaward"
+      },
+      {
+        "name": "停车场业务毛利",
+        "description": "停车场业务毛利",
+        "menuId": 30,
+        "url": "statparkgrosspprofit"
+      },
+      {
+        "name": "提款审核",
+        "description": "提款审核",
+        "menuId": 49,
+        "url": "meterApply"
+      },
+      {
+        "name": "对账",
+        "description": "",
+        "menuId": 78,
+        "url": "tradelogbalance"
+      }
+    ],
+    "name": "财务",
+    "description": "财务",
+    "menuId": 21,
+    "url": "#"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "消息通知",
+        "description": "",
+        "menuId": 32,
+        "url": "article"
+      },
+      {
+        "name": "平台充送",
+        "description": "",
+        "menuId": 36,
+        "url": "rechargeConfig"
+      },
+      {
+        "name": "车主充值记录",
+        "description": "车主充值记录",
+        "menuId": 50,
+        "url": "userRechargeRecord"
+      },
+      {
+        "name": "车主领买券交易信息",
+        "description": "车主买券、领券、交易情况详细信息",
+        "menuId": 56,
+        "url": "showParkTicketRecord"
+      },
+      {
+        "name": "停车场当日支付情况",
+        "description": "",
+        "menuId": 59,
+        "url": "parkTodayPaySituation"
+      },
+      {
+        "name": "banner/文章设置",
+        "description": "banner/文章设置",
+        "menuId": 84,
+        "url": "oper-ctivities"
+      },
+      {
+        "name": "领券活动配置",
+        "description": "领券活动配置",
+        "menuId": 93,
+        "url": "couponConfig"
+      },
+      {
+        "name": "线下扫码领券",
+        "description": "",
+        "menuId": 95,
+        "url": "randomScan"
+      }
+    ],
+    "name": "运营",
+    "description": "运营",
+    "menuId": 22,
+    "url": "#"
+  },
+  {
+    "subMunu": [
+      {
+        "name": "用户管理",
+        "description": "用户管理",
+        "menuId": 10,
+        "url": "userMsg"
+      },
+      {
+        "name": "角色管理",
+        "description": "角色管理",
+        "menuId": 11,
+        "url": "roleMsg"
+      },
+      {
+        "name": "菜单管理",
+        "description": "菜单管理",
+        "menuId": 13,
+        "url": "menuMsg"
+      },
+      {
+        "name": "菜单详情管理",
+        "description": "菜单详情管理",
+        "menuId": 14,
+        "url": "menuDetailMsg"
+      },
+      {
+        "name": "数据字典",
+        "description": "",
+        "menuId": 35,
+        "url": "dataType"
+      },
+      {
+        "name": "银行列表管理",
+        "description": "银行列表管理",
+        "menuId": 86,
+        "url": "bank-msg"
+      },
+      {
+        "name": "人员管理",
+        "description": "",
+        "menuId": 89,
+        "url": "personMsg"
+      },
+      {
+        "name": "开通城市管理",
+        "description": "开通城市管理",
+        "menuId": 96,
+        "url": "openCity"
+      },
+      {
+        "name": "工作流部署管理",
+        "description": "工作流部署管理",
+        "menuId": 99,
+        "url": "workFlow"
+      },
+      {
+        "name": "审批组配置",
+        "description": "审批组配置",
+        "menuId": 104,
+        "url": "approveConfig"
+      },
+      {
+        "name": "审批抄送组",
+        "description": "审批抄送组",
+        "menuId": 105,
+        "url": "copyGroupMsg"
+      },
+      {
+        "name": "流程节点配置",
+        "description": "流程节点配置",
+        "menuId": 106,
+        "url": "activityConfig"
+      }
+    ],
+    "name": "系统管理",
+    "description": "系统管理",
+    "menuId": 9,
+    "url": "dataType"
+  }
+]

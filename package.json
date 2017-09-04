@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "fis3 release -c",
+    "watch": "fis3 release -cwL",
+    "build": "fis3 release -d ./dist"
+  },
+  "devDependencies": {
+    "fis3-parser-vm": "0.0.2"
+  },
+  "dependencies": {
+    "fis3-parser-vm": "0.0.2"
+  }
+}

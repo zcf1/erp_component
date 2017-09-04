@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>按钮</title>
+    #parse("pages/common_pages/pages_header.html")
+    <style>
+        #pagers-box{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading hbuilt">
+                            分页组件
+                        </div>
+                        <div class="panel-body float-e-margins">
+                            <div id="pagers-box"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-sm-12">
+                    <div class="panel panel-default">
+                        <div id="pagers-box2"></div>
+                    </div>
+                </div> -->
+            </div>
+    </div>
+    <script type="text/javascript">
+        require(['controller/pagers/Index'], function (index) {
+            function getPage(nowPageNo){
+                $.get('http://localhost:8000/v2/pages/',{defaultCurrent:nowPageNo},function(data){
+                    var nowPageNo = data.nowPageNo;
+                    var tem = $.Pagination.init({
+                        dom_box: '#pagers-box',
+                        defaultCurrent: nowPageNo,
+                        total: data.total,
+                        defaultPageSize: 10
+                    });
+                    tem.defaultProps.changeCallback = function($this, call_data){
+                        getPage(call_data)
+                    }
+                })
+            }
+
+            getPage(1);
+
+           /* var temp = $.Pagination.init({
+                dom_box: '#pagers-box',
+                defaultCurrent: 1,
+                total: 100,
+                defaultPageSize: 10,
+                changeCallback: function ($this, call_data) {
+                    console.log(call_data);
+                    //init(call_data)
+                    //temp.resetTotal(500,call_data);
+                }
+            });
+            temp.defaultProps.changeCallback = function($this, call_data){
+                console.log(call_data);
+            }*/
+        });
+    </script>
+</body>
+</html>

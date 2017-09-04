@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    #parse("pages/common_pages/pages_header.html")
+</head>
+<body>
+<div class="xfd-wrapper">
+    淘气噢,我是测试用的页面111
+</div>
+<script>
+    window.parent.postMessage({
+        type:'iframeController',
+        content:{
+            key:3,
+            url:'http://127.0.0.1:8080/pages/button.html',
+            info:'按钮组件'
+        }
+    },'*')
+</script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+//状态步骤条
+.step-bar-row{
+    overflow: hidden;
+}
+.step-bar{
+    float: left;
+    position: relative;
+    min-width: 120px;
+}
+.step-bar:not(:last-child):before{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background: #D2D7DD;
+    top: 14px;
+}
+.step-bar-icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: #D2D7DD;
+    background: #FFFFFF;
+    border: 2px solid #D2D7DD;
+    border-radius: 20px;
+    position: absolute;
+    z-index: 1;
+}
+.step-bar-icon span{
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 9px;
+    padding-top: 3px;
+}
+.step-bar-content{
+    margin-top: 40px;
+    color: #D4DCE3;
+}
+.step-bar-title{
+    font-size: 14px;
+    line-height: 14px;
+}
+.step-bar-infor{
+    font-size: 12px;
+    line-height: 12px;
+    margin-top: 4px;
+}
+//进行中
+.step-bar.on .step-bar-icon{
+    color: #ffffff;
+    background: #D2D7DD;;
+}
+.step-bar.on .step-bar-content .step-bar-title{
+    color: #57636F;
+    font-weight: bold;
+}
+//完成
+.step-bar.active .step-bar-icon{
+    color: #ffffff;
+    background: #0091DB;
+    border: 2px solid #0091DB;
+}
+.step-bar.active .step-bar-content{
+    color: #0091DB;
+}
+.step-bar.active .step-bar-content .step-bar-title{
+    font-weight: bold;
+}
+// .step-bar.active:not(:last-child):before{
+//     background: #0091DB;
+// }
+
+
+.step-bar.active:after{
+    background: #0091DB;
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 14px;
+    left: -35%;
+}
+.step-bar.active:first-child:after{
+    background: #0091DB;
+    content: "";
+    height: 2px;
+    width: 65%;
+    left: 0;
+    position: absolute;
+    top: 14px;
+}
+.step-bar.active:last-child:after{
+    background: #0091DB;
+    content: "";
+    height: 2px;
+    width: 35%;
+    left: -35%;
+    position: absolute;
+    top: 14px;
+}
+
+
+.step-bar-icon .icon-kaiqi1{
+    position: absolute;
+    font-size: 34px;
+    left: -4px;
+    top: -11px;
+    color: #3EC093;
+    opacity: 0;
+}
+
+.step-bar-icon .icon-guanbi1{
+    position: absolute;
+    font-size: 34px;
+    left: -4px;
+    top: -11px;
+    color: #FF7570;
+    opacity: 0;
+}
+
+
+//完成
+.step-bar.finish .step-bar-icon .icon-kaiqi1{
+    opacity: 1;
+}
+.step-bar.finish .step-bar-icon span{
+    opacity: 0;
+}
+.step-bar.finish:after{
+    background: #3EC093;
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    top: 14px;
+    left: -35%;
+}
+.step-bar.finish:first-child:after{
+    background: #3EC093;
+    content: "";
+    height: 2px;
+    width: 65%;
+    left: 0;
+    position: absolute;
+    top: 14px;
+}
+.step-bar.finish:last-child:after{
+    background: #3EC093;
+    content: "";
+    height: 2px;
+    width: 35%;
+    left: -35%;
+    position: absolute;
+    top: 14px;
+}
+.step-bar.finish .step-bar-content{
+    color: #3EC093;
+    font-weight: bold;
+}
+
+//失败
+.step-bar.fail .step-bar-icon .icon-guanbi1{
+    opacity: 1;
+}
+.step-bar.fail .step-bar-icon span{
+    opacity: 0;
+}
+
+.step-bar.fail:not(:first-child):after{
+    content: "";
+    height: 2px;
+    width: 35%;
+    position: absolute;
+    top: 14px;
+    left: -35%;
+    background: #3EC093;
+}
+.step-bar.fail .step-bar-content{
+    color: #57636F;
+    font-weight: bold;
+}
+
+
+
+//竖式步骤条
+.vertical-container {
+    width: 100%;
+    padding: 32px;
+}
+
+.vertical-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.vertical-timeline-block {
+    position: relative;
+    padding: 0 0 2em 0;
+}
+.vertical-timeline-block:first-child {
+    margin-top: 0;
+}
+.vertical-timeline-block:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.vertical-timeline-block:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 11px;
+    height: 100%;
+    width: 2px;
+    background: #D2D7DD;
+}
+.vertical-timeline-block:last-child:before{
+    height: 0;
+}
+.vertical-timeline-icon {
+    position: absolute;
+    top: 0;
+    left: -3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    text-align: center;
+    background: #ffffff;
+    border: 2px solid #d2d7dd;
+    z-index: 11;
+}
+.vertical-timeline-icon i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -12px;
+    margin-top: -11px;
+    font-style: normal;
+    color: #d2d7dd;
+}
+.vertical-timeline-content {
+    position: relative;
+    margin-left: 32px;
+    background: #fff;
+    border-radius: .25em;
+    padding: 1em;
+}
+.vertical-timeline-content::before {
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: 100%;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-right: 7px solid #fff;
+}
+.vertical-timeline-content h2 {
+    font-weight: 400;
+    margin-top: -8px;
+    font-size: 16px;
+    color: #D2D7DD;
+    margin-bottom: 16px;
+}
+.vertical-timeline-content p {
+    margin: 1em 0;
+    line-height: 1.6;
+}
+.vertical-timeline-content .btn {
+    float: right;
+}
+.vertical-timeline-content .vertical-date {
+    float: left;
+    font-weight: 500;
+}
+.vertical-timeline-content:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+//完成
+.vertical-timeline-block.active .vertical-timeline-icon{
+    background: #0091DB;
+    border: 2px solid #0091DB;
+}
+.vertical-timeline-block.active .vertical-timeline-icon i{
+    color: #ffffff;
+}
+// .vertical-timeline-block.active:before{
+//     background: #0091DB;
+// }
+
+.vertical-timeline-block.active:after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 11px;
+    height: 100%;
+    width: 2px;
+    background: #0091DB;
+    top: -30%;
+}
+.vertical-timeline-block.active:first-child:after{
+    content: '';
+    position: absolute;
+    left: 11px;
+    height: 70%;
+    width: 2px;
+    background: #0091DB;
+    top: 0;
+}
+.vertical-timeline-block.active:last-child:after{
+    content: '';
+    position: absolute;
+    left: 11px;
+    height: 30%;
+    width: 2px;
+    background: #0091DB;
+    top: -30%;
+}
+.vertical-timeline-block.active .vertical-timeline-content h2{
+    color: #0091DB;
+    font-weight: bold;
+}
+//进行中
+.vertical-timeline-block.on .vertical-timeline-icon{
+    background: #D2D7DD;
+    border: 2px solid #D2D7DD;
+}
+.vertical-timeline-block.on .vertical-timeline-icon i{
+    color: #ffffff;
+}
+.vertical-timeline-block.on .vertical-timeline-content h2{
+    color: #57636F;
+    font-weight: bold;
+}

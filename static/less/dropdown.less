@@ -1,0 +1,144 @@
+.@{css-prefix}dropdown{
+    position: relative;
+}
+.@{css-prefix}dropdown > button{
+    width: 100%;
+    text-align: left;
+    min-width: 110px;
+}
+.@{css-prefix}dropdown >  span{
+    position: absolute;
+    top: 12px;
+    right: 24px;
+}
+.@{css-prefix}dropdown > span >.@{css-prefix}down:after{
+    border: 6px solid #fff;
+    border-top-color: #57636F;
+    top: 3px;
+}
+.@{css-prefix}dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 122px;
+    padding: 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+.@{css-prefix}dropdown-menu > li > a {
+    display: block;
+    padding: 14px 8px;
+    clear: both;
+    font-size: 12px;
+    font-weight: 400;
+    color: #57636F;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+}
+.@{css-prefix}dropdown > button:hover{
+    background: #FAFBFC;
+    border: 1px solid #D2D7DD;
+}
+.open >.@{css-prefix}dropdown-menu{
+    display: block;
+}
+.xfd-dropdown.open > button{
+    background: #E4E9ED;
+    border: 1px solid #D2D7DD;
+}
+.xfd-dropdown.open > span > .xfd-down:after,
+.xfd-dropdown.open > button > span > .xfd-down:after{
+    top: -2px;
+    -webkit-transform: rotate(180deg);
+    border: 6px solid #E4E9ED;
+    border-top-color: #57636F;
+}
+.@{css-prefix}dropdown-menu > li > a:hover{
+    background: #FAFBFC;
+}
+.@{css-prefix}dropdown-menu > li > a:active,
+.@{css-prefix}dropdown-menu > li > a.active{
+    background: #F2F5F8;
+}
+
+/*复合型输入框*/
+.@{css-prefix}input-group {
+    position: relative;
+    display: table;
+    border-collapse: separate;
+}
+.@{css-prefix}input-group .@{css-prefix}form-control {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    
+}
+.@{css-prefix}input-group-btn > button{
+    margin-bottom: 0;
+    margin-right: -2px;
+}
+.@{css-prefix}input-group-addon, .@{css-prefix}input-group-btn, .@{css-prefix}input-group .form-control {
+    display: table-cell;
+}
+.@{css-prefix}input-group-addon, .@{css-prefix}input-group-btn {
+    // width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.@{css-prefix}input-group-btn {
+    position: relative;
+    font-size: 0;
+    white-space: nowrap;
+}
+.@{css-prefix}form-control {
+    display: block;
+    width: 100%;
+    height: 33px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #D2D7DD;
+    border-radius: 2px;
+}
+.@{css-prefix}input-group-addon {
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #F2F5F8;
+    border: 1px solid #D2D7DD;
+    border-radius: 2px;
+}
+.@{css-prefix}input-group-addon .@{css-prefix}search:before,
+.@{css-prefix}input-group-addon .@{css-prefix}search:after{
+    border: 2px solid #57636F;
+}
+.@{css-prefix}input-group-addon:not(:first-child):not(:last-child), 
+.@{css-prefix}input-group-btn:not(:first-child):not(:last-child), 
+.@{css-prefix}input-group .@{css-prefix}form-control:not(:first-child):not(:last-child) {
+    border-radius: 0;
+}
+.@{css-prefix}form-group{
+    margin-bottom: 32px;
+}

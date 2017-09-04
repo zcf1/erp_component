@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>按钮</title>
+    #parse("pages/common_pages/pages_header.html")
+    <style>
+        #editor > div.w-e-toolbar{
+            background: #F2F5F8 !important;
+            color: #8995A0 !important;
+            border: 1px solid #E4E9ED !important;
+            border-bottom: 0 !important;
+        }
+        #editor > div.w-e-text-container{
+            border: 1px solid #E4E9ED !important;
+        }
+        .w-e-toolbar .w-e-menu i{
+            color: #8995A0 !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="panel panel-default">
+            <div class="panel-heading hbuilt">
+                 wangEditor 富文本
+            </div>
+            <div class="panel-body float-e-margins">
+                <div id="editor">
+                </div>
+                <div class="xfd-m-t">
+                    <a href="https://www.kancloud.cn/wangfupeng/wangeditor3/332599">官方文档</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        require(['controller/rich_text/index'], function (index) {
+            
+        });
+        
+    </script>
+</body>
+</html>

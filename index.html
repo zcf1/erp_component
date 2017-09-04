@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Page title -->
+    <title>欢迎您 来到 车位管家 权限管理系统</title>
+    #parse("pages/common_pages/main_header.html")
+    <style>
+        body {
+            background: url(http://erp3.api1.cheweiguanjia.com/erp/images/denglu_bg.jpg) no-repeat !important;
+            background-size: 100% 100% !important;
+        }
+        .m-b-md {
+            margin-bottom: 20px;
+            margin-left: 65px;
+        }
+        .m-t-md{
+            margin-top:20px;
+            margin-left:30px;
+            font-size:12px;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .login-container{
+            max-width: 360px;
+            margin: auto;
+            padding-top: 6%;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="login-container">
+    <div class="text-center m-b-md">
+        <img src="http://erp3.api1.cheweiguanjia.com/erp/images/denglu_erp.png">
+    </div>
+    <form class="form-horizontal" id="formData">
+        <div class="form-group">
+            <label for="user-name" class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="user-name" data-type="required" tips="请输入您的账号" placeholder="请输入您的账号">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label"></label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3" data-type="required" tips="请输入您的密码" placeholder="请输入您的密码">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary btn-block" id="login-in">登录</button>
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <div class="col-md-12 text-center m-t-md">
+            2016 Copyright 北京车位管家科技有限公司
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    require(['controller/login/index'], function () {
+
+    });
+</script>
+</body>
+</html>

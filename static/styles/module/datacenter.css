@@ -1,0 +1,153 @@
+.xfd-datacenter-quick {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.xfd-datacenter-form {
+    margin: 32px 16px;
+    padding-bottom: 16px;
+}
+
+.xfd-datacenter-operation {
+    padding: 0 16px 16px;
+    text-align: right;
+    position: relative;
+}
+
+    .xfd-datacenter-operation button {
+        position: absolute;
+        top: 0;
+    }
+
+    .xfd-datacenter-operation .export {
+        right: 80px;
+    }
+
+    .xfd-datacenter-operation .print {
+        right: 15px;
+    }
+
+.xfd-datacenter-selectchart ul::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.xfd-datacenter-selectchart ul {
+    padding: 0;
+    list-style: none;
+}
+
+    .xfd-datacenter-selectchart ul li {
+        float: left;
+        width: 20%;
+        height: 112px;
+    }
+
+        .xfd-datacenter-selectchart ul li a {
+            display: block;
+            text-align: center;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: #2C393F;
+        }
+
+            .xfd-datacenter-selectchart ul li a div {
+                width: 100%;
+                height: 100%;
+                border-top: 1px solid #F2F5F8;
+            }
+
+        .xfd-datacenter-selectchart ul li.active a div {
+            background: #FAFBFC;
+        }
+
+        .xfd-datacenter-selectchart ul li:hover a div {
+            background: #FAFBFC;
+        }
+
+        .xfd-datacenter-selectchart ul li.active a div span {
+            color: #0091DB;
+        }
+
+        .xfd-datacenter-selectchart ul li a div span {
+            display: block;
+            font-size: 12px;
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        .xfd-datacenter-selectchart ul li a div strong {
+            display: block;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+.curvechart {
+    width: 100%;
+    height: 630px;
+}
+
+.xfd-datacenter-select {
+    border: none;
+}
+
+ul.active {
+    border-bottom: 1px solid #ddd;
+}
+
+.xfd-datacenter-select > li {
+    font-size: 20px;
+    color: #8995A0;
+    letter-spacing: 0;
+}
+
+    .xfd-datacenter-select > li > a {
+        font-size: 14px;
+        color: #2C393F;
+        letter-spacing: 0;
+        line-height: 14px;
+        margin-left: 20px;
+        border-radius: 0;
+        border: 1px solid #D2D7DD;
+    }
+
+ul.active > li > a {
+    font-size: 14px;
+    color: #2C393F;
+    letter-spacing: 0;
+    line-height: 14px;
+    border-bottom: 1px solid #fff;
+}
+
+/*.xfd-datacenter-table{
+    padding:15px 0;
+}*/
+
+.xfd-datacenter-selectbox div {
+    float: left;
+    margin-right: 50px;
+}
+
+.xfd-checkbox-primary input[type=checkbox]:checked + label::before, .xfd-checkbox-primary input[type=radio]:checked + label::before {
+    background-color: #fff;
+    border-color: #D2D7DD;
+    border-width: 1px;
+}
+
+.xfd-checkbox-primary input[type=checkbox]:checked + label::after, .xfd-checkbox-primary input[type=radio]:checked + label::after {
+    color: #2C393F;
+}
+
+.dataTables_paginate {
+    text-align: right;
+}
+
+.form-control{
+    height:30px;
+}
+.form-group select{
+    min-width: 180px;
+}

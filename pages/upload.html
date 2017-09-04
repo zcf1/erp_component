@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    #parse("pages/common_pages/pages_header.html")
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading hbuilt">
+                        拖拽上传图片
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="uploader-cont">
+                                    <!--头部，相册选择和格式选择-->
+                                    <div id="uploader">
+                                        <div class="queueList">
+                                            <div id="dndArea" class="placeholder">
+                                                <div class="filePrompt">
+                                                    <div id="filePicker"></div>
+                                                    <p>或拖拽文件至此区域，单次最多可选300张</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="statusBar" style="display:none;">
+                                            <div class="xfd-progress">
+                                                <span class="text">0%</span>
+                                                <span class="percentage"></span>
+                                            </div><div class="info"></div>
+                                            <div class="btns">
+                                                <div id="filePicker2"></div>
+                                                <div id="uploadBtn" class="xfd-btn xfd-btn-primary xfd-btn-md">开始上传</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+
+        require(['controller/uploader/index'], function (index) {
+            
+        });
+        
+    </script>
+</body>
+</html>

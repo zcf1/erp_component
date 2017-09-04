@@ -1,0 +1,100 @@
+
+.xfd-advance-total{
+    width: 100%;
+    height: 200px;
+    background: url('/static/images/bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-top: 1px solid #FAFBFC;
+}
+.xfd-advance-record{
+    color: #2C393F;
+    font-size: 16px;
+    margin-top: 75px;
+    margin-left: 16px;
+}
+.xfd-advance-record span{
+    font-size: 48px;
+    color: #F7AD60;
+}
+
+/*开始*/
+.xfd-approve{
+    display: none;
+}
+.xfd-approve.open{
+    display: block;
+}
+.xfd-approve-title{
+    width: 100%;
+    padding: 32px 32px 16px;
+    overflow: hidden;
+}
+.xfd-first-num{
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 1px solid #E4E9ED;
+    background: #ffffff;
+    font-size: 36px;
+    color: #8995A0;
+    text-align: center;
+    text-align: center;
+    padding-top: 8px;
+
+}
+.xfd-first-num .iconfont{
+    font-size: 44px;
+}
+.xfd-first-num span{
+    display: inline-block;
+    padding-top: 3px;
+}
+/*结束*/
+
+.xfd-wrapper-title{
+    padding: 32px 16px 16px;
+}
+.xfd-wrapper-title .iconfont{
+    font-size: 35px;
+    color: #E4E9ED;
+    margin-right: 4px;
+}
+.xfd-wrapper-title span{
+    font-size: 20px;
+    color: #57636F;
+}
+
+
+.xfd-details-line{
+    position: relative;
+    padding-bottom: 64px;
+}
+.xfd-details-line:not(:last-child){
+    border-left: 2px solid #D2D7DD;
+}
+.xfd-details-dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #D8D8D8;
+    position: absolute;
+    left: -3px;
+    top: -2px;
+}
+
+.xfd-details-line:first-child .xfd-details-dot{
+    left: -5px;
+}
+.xfd-details-title{
+    position: absolute;
+    left: 20px;
+    top: -9px;
+    font-size: 16px;
+    color: #57636F;
+
+}
+.xfd-details-content{
+    overflow: hidden;
+    padding-top: 40px;
+}

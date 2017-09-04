@@ -1,0 +1,118 @@
+body{
+  background-color: #039be6;
+}
+
+body.blank {
+  background: url(../images/denglu_bg.jpg) no-repeat !important;
+  background-size: 100% 100% !important;
+}
+
+.light-version{
+  background-color:#0388c9 !important;
+  border-bottom: 1px solid #0395db !important;
+
+}
+
+.light-version span{
+  color:#fff !important;
+}
+
+.navbar-right > a{
+  color: #9d9fa2;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.navbar-right > a:hover{
+  color: #0383c0;
+}
+
+.menuBgColor{
+  background-color:#039be6;
+}
+
+.hide-menu{
+  background-color:#fff; 
+  color:#0383c0;
+}
+
+#side-menu li{
+  background-color:#039be6;
+  border-bottom: 1px solid #0395db;
+}
+
+#side-menu li:first-child{
+  border-top: 1px solid #0395db !important;
+}
+
+#side-menu li a{
+  color: #fff !important;
+}
+
+#side-menu li.active{
+  background-color: #0388c9 !important;
+}
+
+#side-menu li .nav-second-level li.active a{
+  background-color: #21a6e7;
+}
+
+#side-menu li:hover{
+  background-color: #21a6e7;
+}
+
+#side-menu li:hover{
+  background-color: #21a6e7;
+}
+
+#side-menu li .nav-second-level li:hover a{
+  background-color: #21a6e7;
+}
+
+#side-menu.nav > li > a:hover,
+#side-menu.nav > li > a:focus {
+  background: #21a6e7;
+}
+
+.login-bg img{
+  width: 100%;
+  position: absolute;
+}
+
+.panel-of{
+  overflow: hidden;
+}
+
+#totalRecordNum a{
+  padding: 3px 7px;
+  border: 1px solid #ccc;
+  margin-left: 5px;
+  background-color: #fff;
+}
+
+.cur{
+  padding: 3px 7px;
+  border: 1px solid #62a8ea;
+  margin-left: 5px;
+  background-color: #62a8ea;
+  color: #fff;
+}
+
+#inNumText{
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+
+.form-horizontal .control-label{
+  text-align: left;
+  padding-left: 60px;
+}
+
+.color-write{
+  color: #fff !important;
+}
+.panel-ofh{
+  overflow: hidden !important;
+  line-height: 30px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    #parse("pages/common_pages/pages_header.html")
+    <link href="/static/styles/module/circle-progress.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading hbuilt">
+                        环形进度条
+                    </div>
+                    <div class="panel-body float-e-margins">
+                        <div class="row">
+
+                            <div class="col-sm-3">
+                                <div class="xfs-circle-progress xfd-text-center">
+                                    <div class="prg-cont rad-prg" id="indicatorContainer">
+                                        <div class="rad-con">
+                                            <p class="xfd-font-16 xfd-text-gray2">40%</p>
+                                            <p class="xfd-font-14 xfd-text-gray4">已回收预付款</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="xfs-circle-progress xfd-text-center">
+                                    <div class="prg-cont rad-prg" id="indicatorContainer2">
+                                        <div class="rad-con">
+                                            <p class="xfd-font-16 xfd-text-gray2">40%</p>
+                                            <p class="xfd-font-14 xfd-text-gray4">已回收预付款</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    require(['controller/circleprogress/Index'], function (index) {});
+</script>
+</html>

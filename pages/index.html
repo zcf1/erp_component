@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Page title -->
+    <title>ERP管理系统</title>
+    #parse("pages/common_pages/main_header.html")
+</head>
+<body class="xfd-family">
+    <div class="xfd-header">
+        #parse("pages/common_pages/top-menu.html")
+    </div>
+    <div class="xfd-menu">
+        #parse("pages/common_pages/left-menu.html")
+    </div>
+    <div class="xfd-contabs">
+        <div class="xfd-icon xfd-float-left"><i class="iconfont icon-youchakan"></i></div>
+        <div class="xfd-nav-content">
+            <ul class="nav nav-pills" id="navPills" data-width="92">
+                <li role="presentation" class="active" data-navkey="0" name="nav0"><a href="javascript:;">首页</a></li>
+            </ul>
+        </div>
+        <div class="xfd-icon xfd-nav-right"><i class="iconfont icon-zuochakan"></i></div>
+        <div class="xfd-more">
+            <div><i class="iconfont icon-xiala"></i></div>
+            <ul class="dropdown-menu xfd-contabs-dropdown" role="menu">
+                <li class="reload-page" role="presentation">
+                    <a href="javascript:" role="menuitem"><i class="icon wb-reload"></i> 刷新当前</a>
+                </li>
+                <li class="close-other" role="presentation">
+                    <a href="javascript:" role="menuitem"><i class="icon wb-close"></i> 关闭其他</a>
+                </li>
+                <li class="close-all" role="presentation">
+                    <a href="javascript:" role="menuitem"><i class="icon wb-power"></i> 关闭所有</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="xfd-content">
+        <iframe class="xfd-iframe on-show" name="iframe0" data-id="0" src="welcome.html"></iframe>
+    </div>
+    <iframe src="" frameborder="0" style="display:none;" id="hide-iframe"></iframe>
+    <script type="text/javascript">
+        require(['common/main'], function () {
+          
+            
+           
+        });
+
+    </script>
+</body>
+</html>
