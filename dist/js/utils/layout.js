@@ -410,6 +410,24 @@
         $('.xfd-sweet-overlay').remove();
     }
 
+    //菜单左右图标显隐
+    Layout.prototype.menuDisplay = function (){
+        //存放容器宽度
+        var navWidth = $(".xfd-nav-content").width();
+        //存放菜单宽度和
+        var navSum = 0;
+        var liSum = $(".xfd-nav-content ul li").length;
+        var $navIcon = $(".xfd-contabs .xfd-float-left,.xfd-contabs .xfd-nav-right");
+        for(var i = 0; i < liSum; i++){
+            navSum+=$(".xfd-nav-content ul li").eq(i).width();
+        }
+        if(navSum<navWidth){
+            $navIcon.css("visibility","hidden");
+        }else{
+            $navIcon.css("visibility","inherit");
+        }
+    }
+
     //小路由
     Layout.prototype.hashChange = function () {
         var _this = this;
@@ -461,8 +479,10 @@
             LayoutController.initDropdown(opts);
             LayoutController.setBodySmall();
             LayoutController.hashChange();
+            LayoutController.menuDisplay();
             $(window).bind("resize click", function () {
                 LayoutController.setBodySmall();
+                LayoutController.menuDisplay();
             });
         }
     };
